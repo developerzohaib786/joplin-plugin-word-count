@@ -18,7 +18,7 @@ A lightweight, real-time statistics panel for Joplin. This plugin helps writers,
 4. Click **Install** and restart Joplin.
 
 ### Manual Installation
-1. Download the `.jpl` file from the [GitHub Releases](https://github.com/developerzohaib/joplin-plugin-word-count/releases) page.
+1. Download the `.jpl` file from the [GitHub Releases](https://github.com/developerzohaib786/joplin-plugin-word-count/releases/tag/v1.0.0) page.
 2. In Joplin, go to **Tools** > **Options** > **Plugins**.
 3. Click the gear icon (top right) and select **Install from file**.
 4. Select the downloaded `.jpl` file.
