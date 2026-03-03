@@ -7,7 +7,6 @@ A lightweight, real-time statistics panel for Joplin. This plugin helps writers,
 * **Real-time Word Count**: Updates automatically as you type.
 * **Reading Time Estimation**: Calculates how long your note takes to read (based on a 200 wpm average).
 * **Spell Checker**: Detects and lists misspelled words in a scrollable box, with a count badge showing how many errors were found. Markdown syntax, code blocks, URLs, and capitalised words (proper nouns) are automatically excluded from checking.
-* **Collapsible Sidebar**: A toolbar button (📝 spell-check icon) in the Note Toolbar lets you show or hide the panel instantly — no layout changes needed.
 * **Theme Aware**: Automatically matches your Joplin theme (Light, Dark, Dracula, etc.) using native CSS variables.
 * **Sync Status**: Displays a "Last Synced" timestamp so you know your metrics are current.
 
@@ -29,9 +28,9 @@ A lightweight, real-time statistics panel for Joplin. This plugin helps writers,
 
 1. Once installed, a panel titled **Note Metrics** will appear automatically.
 2. The panel shows:
-   - **Words** — total word count of the current note.
-   - **Reading Time** — estimated reading time in minutes.
-   - **Misspelled Words** — a numbered, scrollable list of words not found in the English dictionary, with a total count badge.
+   - **Words**: total word count of the current note.
+   - **Reading Time**: estimated reading time in minutes.
+   - **Misspelled Words**: a numbered, scrollable list of words not found in the English dictionary, with a total count badge.
 3. To **show or hide** the panel, click the spell-check icon button in the **Note Toolbar** (top-right area of the editor).
 4. To **reposition** the panel, go to **View** > **Change application layout**, drag the **Note Metrics** box to your preferred location (e.g., right sidebar or bottom panel), then click **Back**.
 
@@ -42,7 +41,7 @@ The plugin monitors your workspace for changes and note selections. It uses a ro
 * **Word Count Logic**: `note.body.split(/\s+/).length`
 * **Reading Time**: `Math.ceil(wordCount / 200)`
 * **Spell Check**: Uses `an-array-of-english-words` (~275k words) loaded into a `Set<string>` for fast O(1) lookups. Markdown syntax, fenced code blocks, inline code, URLs, image/link syntax, and capitalised words are stripped before checking. Duplicate words are deduplicated so each misspelling is shown only once.
-* **Toggle Panel**: Registered as a Joplin command (`toggleStatsPanel`) bound to a Note Toolbar button using `ToolbarButtonLocation.NoteToolbar`. Calls `panels.visible()`, `panels.hide()`, and `panels.show()` to toggle visibility.
+
 
 ## License
 
